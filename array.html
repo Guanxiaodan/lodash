@@ -7,8 +7,23 @@
 <body>
 <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.js"></script>
 <script>
-    const arr = [33,22,555,3443];
+    /**
+     * 根据元素找索引
+     * */
+    const arr = [33, 22, 555, 3443];
     console.log('index', _.indexOf(arr, 555));
+
+    /**
+    * 数组循环
+    * */
+    const arr2 = [33, 22, 555, 3443];
+    _.forEach(arr2, (v, i) => {
+        console.log(v, i)
+    });
+    // 33 0
+    // 22 1
+    // 555 2
+    // 3443 3
 
 
 </script>

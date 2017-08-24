@@ -7,9 +7,29 @@
 </head>
 <body>
 <script>
-    const str = '2017/08/24'
+    /**
+     *
+     * */
+
+    /**
+     * 分割字符串
+     * */
+    const str = '2017/08/24';
+    const str1 = 'bawofenkai';
     const split = _.split(str, '/');
+    const split1 = _.split(str1, '');
     console.log(split); //  ["2017", "08", "24"]
+    console.log(split1); //  ["b", "a", "w", "o", "f", "e", "n", "k", "a", "i"]
+
+    /**
+     * 驼峰
+     * */
+    const str2 = 'show-camel';
+    const str3 = 'show/camel';
+    const str4 = 'show camel';
+    console.log(_.camelCase(str2)); // showCamel
+    console.log(_.camelCase(str3)); // showCamel
+    console.log(_.camelCase(str4)); // showCamel
 
 </script>
 </body>

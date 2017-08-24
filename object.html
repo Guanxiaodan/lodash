@@ -7,9 +7,58 @@
 </head>
 <body>
 <script>
+    /**
+     *
+     *
+     * */
+
+    /**
+     * 给对象添加属性
+     * _.set
+     * */
     var obj = {name: '小芳'};
     _.set(obj, 'age', 22);
     console.log(obj);// { age : 22, name : "小芳", }
+
+    /**
+     * 循环对象
+     * _.forEach
+     * */
+    var obj2 = {
+        name: '明明',
+        home: '北京',
+        school: '清华大学',
+    };
+    _.forEach(obj2, (v, k) => {
+        console.log(v, k)
+    });
+
+    /**
+     * 删除对象属性
+     * _.omit
+     * */
+    var obj3 = {
+        name: '明明',
+        home: '北京',
+        school: '清华大学',
+    };
+    console.log(_.omit(obj3, 'name')); // {home: "北京", school: "清华大学"}
+
+    /**
+     * 检查是否为对象
+     * _.isPlainObject
+     * */
+    var obj4 = {
+        name: '明明',
+        home: '北京',
+        school: '清华大学',
+    };
+    var arr = [1,33];
+    console.log(_.isPlainObject(obj4)); // true
+    console.log(_.isPlainObject(arr)); // false
+
+
+
 </script>
 </body>
 </html>
