@@ -9,10 +9,12 @@
 <script>
     /**
      *
+     *
      * */
 
     /**
      * 分割字符串
+     * _.split
      * */
     const str = '2017/08/24';
     const str1 = 'bawofenkai';
@@ -23,6 +25,7 @@
 
     /**
      * 驼峰
+     * _.camelCase
      * */
     const str2 = 'show-camel';
     const str3 = 'show/camel';
@@ -30,6 +33,19 @@
     console.log(_.camelCase(str2)); // showCamel
     console.log(_.camelCase(str3)); // showCamel
     console.log(_.camelCase(str4)); // showCamel
+
+    /**
+     * 判断是否为空
+     * _.isEmpty
+     * */
+    console.log(_.isEmpty('')); // true
+    console.log(_.isEmpty({})); // true
+    console.log(_.isEmpty([])); // true
+
+    const obj = {};
+    console.log(obj.name); // undefined
+    console.log(_.isEmpty(obj.name)); // true
+
 
 </script>
 </body>

@@ -36,10 +36,25 @@ lodash的使用
 
 ## 根据index删除数组元素----
 
-## 根据数组元素找到相应index----_.indexOf
+## 根据数组元素找到相应index----_.indexOf、 _.findIndex
 ```angularjs
+    // _.indexOf用于简单数组
     const arr = [33, 22, 555, 3443];
     console.log('index', _.indexOf(arr, 555)); // index 2
+```
+```angularjs
+    // _.findIndex: 用于复杂数组
+    var users = [
+        { 'user': 'barney',  'active': false },
+        { 'user': 'fred',    'active': false },
+        { 'user': 'pebbles', 'active': true }
+    ];
+    console.log(_.findIndex(users, { 'user': 'fred', 'active': false })); // 1
+    console.log(_.findIndex(users, 'active')); // 2
+    console.log(_.findIndex(users, function (g) {
+        // g是数组元素
+        return g.user == 'barney';
+    })); // 0
 ```
 
 ## 删除对象属性----_.omit
@@ -87,6 +102,18 @@ lodash的使用
     console.log(_.isNaN(3223)); // false
 ```
 
+## 判断是否为空---_.isEmpty
+> 可以用来判断空对象，空数组，空字符串,是undefined也会返回true
+```angularjs
+    console.log(_.isEmpty('')); // true
+    console.log(_.isEmpty({})); // true
+    console.log(_.isEmpty([])); // true
+    
+    const obj = {};
+    console.log(obj.name); // undefined
+    console.log(_.isEmpty(obj.name)); // true
+```
+
 ## 给对象添加属性---_.set
 > 为什么会用到这个属性呢？ 答：在用Vue的时候，会遇到obj[age]，这样给对象添加了属性，但是在dom没有及时显现的情况，那是因为Vue不认为obj发生了变化，所以用'_.set'方法就解决了这个问题。
 ```angularjs
@@ -104,4 +131,32 @@ lodash的使用
     console.log(_.camelCase(str2)); // showCamel
     console.log(_.camelCase(str3)); // showCamel
     console.log(_.camelCase(str4)); // showCamel
+```
+
+## 排序---- _.sortBy
+```angularjs
+    var users = [
+        { 'user': 'fred',   'age': 34, 'id': 3 },
+        { 'user': 'barney', 'age': 44, 'id': 2 },
+        { 'user': 'fred',   'age': 41, 'id': 2 },
+        { 'user': 'barney', 'age': 34, 'id': 1 }
+    ];
+// -------------------------------------------
+    console.log(_.sortBy(users, 'age'));
+//    [{user: "fred", age: 34, id: 3},
+//     {user: "barney", age: 34, id: 1},
+//     {user: "fred", age: 41, id: 2},
+//     {user: "barney", age: 44, id: 2}]
+// -------------------------------------------
+//    先按ID排，ID相同的情况下按age排
+    console.log(_.sortBy(users, ['id', 'age']));
+//    [{user: "barney", age: 34, id: 1},
+//    {user: "fred", age: 41, id: 2},
+//    {user: "barney", age: 44, id: 2},
+//    {user: "fred", age: 34, id: 3}]
+// -------------------------------------------
+    // 也可以将字符串换成回调函数，像这样，返回的结果跟'age'一样
+    console.log(_.sortBy(users, [function (o) {
+        return o.age;
+    }]));
 ```

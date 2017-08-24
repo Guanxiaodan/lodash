@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a79469ad-374b-49e1-bc3c-36f1f0f25003" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/number.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/array.html" afterPath="$PROJECT_DIR$/array.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/number.html" afterPath="$PROJECT_DIR$/number.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/string.html" afterPath="$PROJECT_DIR$/string.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,8 +24,8 @@
       <file leaf-file-name="array.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/array.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="72" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="72" />
+            <state relative-caret-position="99">
+              <caret line="43" column="7" lean-forward="true" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -42,8 +44,18 @@
       <file leaf-file-name="string.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/string.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+            <state relative-caret-position="536">
+              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="46" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="number.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/number.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -53,27 +65,21 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="454">
-                <caret line="81" column="22" lean-forward="true" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
+              <first_editor relative-caret-position="615">
+                <caret line="156" column="46" lean-forward="false" selection-start-line="156" selection-start-column="46" selection-end-line="156" selection-end-column="46" />
                 <folding>
-                  <marker date="1503569209000" expanded="true" signature="213:230" ph="{...}" />
-                  <marker date="1503569209000" expanded="true" signature="348:427" ph="{&quot;name&quot;: '明明'...}" />
-                  <marker date="1503569209000" expanded="true" signature="461:480" ph="{...}" />
-                  <marker date="1503569209000" expanded="true" signature="803:874" ph="{&quot;name&quot;: '明明'...}" />
-                  <marker date="1503569209000" expanded="true" signature="1349:1420" ph="{&quot;name&quot;: '明明'...}" />
+                  <marker date="1503572488000" expanded="true" signature="213:230" ph="{...}" />
+                  <marker date="1503572488000" expanded="true" signature="348:427" ph="{&quot;name&quot;: '明明'...}" />
+                  <marker date="1503572488000" expanded="true" signature="461:480" ph="{...}" />
+                  <marker date="1503572488000" expanded="true" signature="846:995" ph="[...]" />
+                  <marker date="1503572488000" expanded="true" signature="1298:1369" ph="{&quot;name&quot;: '明明'...}" />
+                  <marker date="1503572488000" expanded="true" signature="1844:1915" ph="{&quot;name&quot;: '明明'...}" />
+                  <marker date="1503572488000" expanded="true" signature="3209:3415" ph="[...]" />
+                  <marker date="1503572488000" expanded="true" signature="4062:4098" ph="[...]" />
+                  <marker date="1503572488000" expanded="true" signature="4076:4098" ph="{&quot;return&quot;: o.age...}" />
                 </folding>
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="number.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/number.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="16" selection-end-column="40" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -92,6 +98,7 @@
     <findStrings>
       <find>split</find>
       <find>删除</find>
+      <find>排序</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -101,10 +108,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/array.js" />
-        <option value="$PROJECT_DIR$/array.html" />
-        <option value="$PROJECT_DIR$/string.html" />
         <option value="$PROJECT_DIR$/object.html" />
         <option value="$PROJECT_DIR$/number.html" />
+        <option value="$PROJECT_DIR$/string.html" />
+        <option value="$PROJECT_DIR$/array.html" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -259,16 +266,15 @@
       <option name="presentableId" value="Default" />
       <updated>1501837294586</updated>
       <workItem from="1501837295869" duration="610000" />
-      <workItem from="1503558694336" duration="8366000" />
+      <workItem from="1503558694336" duration="11654000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8976000" />
+    <option name="totallyTimeSpent" value="12264000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="974" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.117430225" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -308,14 +314,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/array.js" />
-    <entry file="file://$PROJECT_DIR$/string.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/object.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="536">
@@ -324,18 +322,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/array.html">
+    <entry file="file://$PROJECT_DIR$/number.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="72" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="72" />
+        <state relative-caret-position="437">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/number.html">
+    <entry file="file://$PROJECT_DIR$/string.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="16" selection-end-column="40" />
+        <state relative-caret-position="536">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="46" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/array.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="43" column="7" lean-forward="true" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -343,14 +349,18 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="454">
-            <caret line="81" column="22" lean-forward="true" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
+          <first_editor relative-caret-position="615">
+            <caret line="156" column="46" lean-forward="false" selection-start-line="156" selection-start-column="46" selection-end-line="156" selection-end-column="46" />
             <folding>
-              <marker date="1503569209000" expanded="true" signature="213:230" ph="{...}" />
-              <marker date="1503569209000" expanded="true" signature="348:427" ph="{&quot;name&quot;: '明明'...}" />
-              <marker date="1503569209000" expanded="true" signature="461:480" ph="{...}" />
-              <marker date="1503569209000" expanded="true" signature="803:874" ph="{&quot;name&quot;: '明明'...}" />
-              <marker date="1503569209000" expanded="true" signature="1349:1420" ph="{&quot;name&quot;: '明明'...}" />
+              <marker date="1503572488000" expanded="true" signature="213:230" ph="{...}" />
+              <marker date="1503572488000" expanded="true" signature="348:427" ph="{&quot;name&quot;: '明明'...}" />
+              <marker date="1503572488000" expanded="true" signature="461:480" ph="{...}" />
+              <marker date="1503572488000" expanded="true" signature="846:995" ph="[...]" />
+              <marker date="1503572488000" expanded="true" signature="1298:1369" ph="{&quot;name&quot;: '明明'...}" />
+              <marker date="1503572488000" expanded="true" signature="1844:1915" ph="{&quot;name&quot;: '明明'...}" />
+              <marker date="1503572488000" expanded="true" signature="3209:3415" ph="[...]" />
+              <marker date="1503572488000" expanded="true" signature="4062:4098" ph="[...]" />
+              <marker date="1503572488000" expanded="true" signature="4076:4098" ph="{&quot;return&quot;: o.age...}" />
             </folding>
           </first_editor>
           <second_editor />

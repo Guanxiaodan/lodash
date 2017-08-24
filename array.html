@@ -8,13 +8,35 @@
 <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.js"></script>
 <script>
     /**
-     * 根据元素找索引
+     *
+     *
      * */
+
+    /**
+     * 根据元素找索引
+     * _.indexOf
+     * _.findIndex
+     * */
+        // _.indexOf: 好像只能用于单纯数组
     const arr = [33, 22, 555, 3443];
-    console.log('index', _.indexOf(arr, 555));
+    console.log('index', _.indexOf(arr, 555)); // index 2
+
+    // _.findIndex: 用于复杂数组
+    var users = [
+        { 'user': 'barney',  'active': false },
+        { 'user': 'fred',    'active': false },
+        { 'user': 'pebbles', 'active': true }
+    ];
+    console.log(_.findIndex(users, { 'user': 'fred', 'active': false })); // 1
+    console.log(_.findIndex(users, 'active')); // 2
+    console.log(_.findIndex(users, function (o) {
+        // o是数组元素
+        return o.user == 'barney';
+    })); // 0
 
     /**
     * 数组循环
+    * _.forEach
     * */
     const arr2 = [33, 22, 555, 3443];
     _.forEach(arr2, (v, i) => {
@@ -25,6 +47,33 @@
     // 555 2
     // 3443 3
 
+    /**
+     * 排序
+     *  _.sortBy
+     * */
+    var users = [
+        { 'user': 'fred',   'age': 34, 'id': 3 },
+        { 'user': 'barney', 'age': 44, 'id': 2 },
+        { 'user': 'fred',   'age': 41, 'id': 2 },
+        { 'user': 'barney', 'age': 34, 'id': 1 }
+    ];
+    console.log(_.sortBy(users, 'age'));
+//    [{user: "fred", age: 34, id: 3},
+//     {user: "barney", age: 34, id: 1},
+//     {user: "fred", age: 41, id: 2},
+//     {user: "barney", age: 44, id: 2}]
+
+//    先按ID排，ID相同的情况下按age排
+    console.log(_.sortBy(users, ['id', 'age']));
+//    [{user: "barney", age: 34, id: 1},
+//    {user: "fred", age: 41, id: 2},
+//    {user: "barney", age: 44, id: 2},
+//    {user: "fred", age: 34, id: 3}]
+
+    // 也可以将字符串换成回调函数，像这样，返回的结果跟'age'一样
+    console.log(_.sortBy(users, [function (o) {
+        return o.age;
+    }]));
 
 </script>
 
