@@ -79,7 +79,13 @@ lodash的使用
 
 ## 检查是否为字符串----
 
-## 检查是否为NaN----
+## 检查是否为NaN----_.isNaN
+```angularjs
+    console.log(_.isNaN(parseInt('2311'))); // false
+    console.log(_.isNaN(parseInt('wwww'))); // true
+    console.log(_.isNaN('www')); // false
+    console.log(_.isNaN(3223)); // false
+```
 
 ## 给对象添加属性---_.set
 > 为什么会用到这个属性呢？ 答：在用Vue的时候，会遇到obj[age]，这样给对象添加了属性，但是在dom没有及时显现的情况，那是因为Vue不认为obj发生了变化，所以用'_.set'方法就解决了这个问题。
