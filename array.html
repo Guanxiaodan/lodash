@@ -37,7 +37,9 @@
     /**
     * 数组循环
     * _.forEach
+    * _.map
     * */
+    //  _.forEach
     const arr2 = [33, 22, 555, 3443];
     _.forEach(arr2, (v, i) => {
         console.log(v, i)
@@ -46,6 +48,26 @@
     // 22 1
     // 555 2
     // 3443 3
+
+
+    //  _.map
+    var user1 = [
+        { 'user': '小红', 'age': 13, 'pet': '小猫', id: 11111 },
+        { 'user': '花花', 'age': 22, 'pet': '狗狗', id: 22222 }
+    ];
+    console.log(_.map(user1, 'user')); // => ['小红', '小花']
+    // -------------------------------------------------------
+    console.log(_.map(user1, {'pet': '狗狗'})); // => [false, true]
+    // -------------------------------------------------------
+    console.log(_.map(user1, (n, i) => {
+        return n.age * 2
+    })); // [26, 44]
+
+    const obj2 = { 'user': '小红', 'age': 13, 'pet': '小猫', id: 11111 };
+    console.log(_.map(obj2, (n) => {
+        return n * 2
+    })); // [NaN, 26, NaN, 22222]
+
 
     /**
      * 排序
@@ -74,6 +96,135 @@
     console.log(_.sortBy(users, [function (o) {
         return o.age;
     }]));
+
+    /**
+     * 根据数组元素删除数组元素
+     * 从头到尾，只要是一样的都删除
+     * _.pull
+     * */
+    var arr3 = ['a', 'b', 'c', 'a', 'b', 'c'];
+    _.pull(arr3, 'a', 'c');
+    console.log(arr3); // ['b','b'];
+
+    /**
+     * 数组反转
+     * _.reverse
+     * */
+    const arr4 = ['G', 'X', 'D'];
+    console.log(_.reverse(arr4)); // ["D", "X", "G"]
+
+    /**
+     * 将属性值匹配到的项，整个一个拿出来
+     * _.find
+     * _.filter
+     * 前者只返回一条，并且返回的是一个对象
+     * 后者返回所有匹配上的项，返回的是一个数组
+     * */
+//    _.find
+    var user3 = [
+        { 'user': 'barney',  'age': 36, 'active': true },
+        { 'user': 'fred',    'age': 40, 'active': false },
+        { 'user': 'pebbles', 'age': 1,  'active': true }
+    ];
+    console.log(_.find(user3, function (o) {
+        return o.age < 40;
+    })); // {user: "barney", age: 36, active: true}
+    console.log(_.find(user3, {'age': 1})); // {user: "pebbles", age: 1, active: true}
+
+//    _.filter
+    var arr7 = [
+        { 'user': 'jray', 'age': 36, 'active': true },
+        { 'user': 'fred',   'age': 40, 'active': false },
+        { 'user': 'lili', 'age': 44, 'active': true },
+    ];
+    console.log(_.filter(arr7, function (o) {
+        return o.active;
+    }));
+
+
+    /**
+     * 让对象中的某一个属性值作为整个对象的键
+     * _.keyBy
+     * */
+    var array = [
+        { 'dir': 'left', 'code': 97 },
+        { 'dir': 'right', 'code': 100 }
+    ];
+
+    console.log(_.keyBy(array, 'dir'));
+    // {
+    //   left: {dir: "left", code: 97},
+    //   right:{dir: "right", code: 100}
+    // }
+
+    /**
+     * 克隆
+     * _.clone
+     * _.cloneDeep
+     * */
+//    _.clone
+    var arr5 = [{ 'a': 1 , 'c': {'d': 'like', 'e': 'eat'}}, { 'b': 2 }];
+    var shallow = _.clone(arr5);
+    console.log(shallow); // [{ 'a': 1 , 'c': {'d': 'like', 'e': 'eat'}}, { 'b': 2 }]
+    console.log(arr5[0] === shallow[0]); // true
+
+//    _.cloneDeep
+    var arr6 = [{ 'a': 1 }, { 'b': 2 }];
+    var deep = _.cloneDeep(arr6);
+    console.log(deep[0] === arr6[0]); // false
+
+
+
+    /**
+     * 数组去重
+     * _.uniq
+     * */
+    console.log(_.uniq(['a', 'b', 'a'])); // ["a", "b"]
+
+
+    /**
+     * 判断是不是数组
+     * _.isArray
+     * */
+    console.log(_.isArray([])); // true
+    console.log(_.isArray([111,222])); // true
+    console.log(_.isArray({})); // false
+
+    /**
+     *
+     *
+     * */
+
+
+    /**
+     *
+     *
+     * */
+
+
+    /**
+     *
+     *
+     * */
+
+
+    /**
+     *
+     *
+     * */
+
+
+    /**
+     *
+     *
+     * */
+
+
+    /**
+     *
+     *
+     * */
+
 
 </script>
 

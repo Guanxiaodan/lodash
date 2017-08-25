@@ -47,7 +47,11 @@
     /**
      * 检查是否为对象
      * _.isPlainObject
+     * _.isObject
+     * 前者判断的是单纯的对象
+     * 后者是广义上的对象，比如数组，正则，函数之类的，也会返回true
      * */
+    // _.isPlainObject
     var obj4 = {
         name: '明明',
         home: '北京',
@@ -57,7 +61,46 @@
     console.log(_.isPlainObject(obj4)); // true
     console.log(_.isPlainObject(arr)); // false
 
+    //  _.isObject
+    console.log(_.isObject([])); // true
+    console.log(_.isObject({})); // true
+    console.log(_.isObject(function () {
 
+    })); // true
+    console.log(_.isObject('')); // false
+
+    /**
+     *  对象去重，以第一个为准
+     *  _.defaults
+     * */
+    console.log(_.defaults({'a': 1}, {'b': 2}, {'a': 3}, {'b': 222}, {'c': 2}));
+    // {a: 1, b: 2, c: 2}
+
+    /**
+     * 获取对象，数字，字符串长度
+     * _.size
+     * */
+    console.log(_.size({a: 222, b: 111, c:666, d:809})); // 4
+    console.log(_.size([1, 2, 3])); // 3
+    console.log(_.size('guanxiaotong')); // 12
+
+
+    /**
+     *
+     *
+     * */
+
+
+    /**
+     *
+     *
+     * */
+
+
+    /**
+     *
+     *
+     * */
 
 </script>
 </body>

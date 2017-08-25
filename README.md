@@ -1,12 +1,15 @@
 # lodash-use
-lodash的使用
+项目中用到的lodash,都是最基本的用法，详细的还得看文档
 
 废话不多，直接开始吧--------------------
 
-## 循环对象、数组----_.forEach
+## 循环对象、数组----_.forEach、 _.map
+> 两个函数用法是一样的，只需将forEach换成map就行了
+> 两个函数功能上有什么区别？？ _.forEach可以对每一个元素进行操作，
+>_.map可以对元素进行操作且返回数组
 > 回调函数的两个参数，第一个是*数组元素值/属性值*，第二个是*索引/属性*
 ```angularjs
-    // 循环数组
+    // _.forEach循环数组
     const arr2 = [33, 22, 555, 3443];
     _.forEach(arr2, (v, i) => {
         console.log(v, i);
@@ -17,7 +20,7 @@ lodash的使用
     // 3443 3
 ```
 ```angularjs
-  // 循环对象
+  // _.forEach循环对象
       var obj2 = {
           name: '明明',
           home: '北京',
@@ -31,12 +34,40 @@ lodash的使用
       // 清华大学 school
   
 ```
+```angularjs
+// _.map循环数组
+    var user1 = [
+        { 'user': '小红', 'age': 13, 'pet': '小猫', id: 11111 },
+        { 'user': '花花', 'age': 22, 'pet': '狗狗', id: 22222 }
+    ];
+    console.log(_.map(user1, 'user')); // => ['小红', '小花']
+    // -------------------------------------------------------
+    console.log(_.map(user1, {'pet': '狗狗'})); // => [false, true]
+    // -------------------------------------------------------
+    console.log(_.map(user1, (n, i) => {
+        return n.age * 2
+    })); // [26, 44]
+```
+```angularjs
+// _.map循环对象
+    const obj2 = { 'user': '小红', 'age': 13, 'pet': '小猫', id: 11111 };
+    console.log(_.map(obj2, (n) => {
+        return n * 2
+    })); // [NaN, 26, NaN, 22222]
 
-## 根据数组元素删除数组元素----
+```
+
+## 根据数组元素删除数组元素---- _.pull
+```angularjs
+    var array = ['a', 'b', 'c', 'a', 'b', 'c'];
+    _.pull(array, 'a', 'c');
+    console.log(array); // ['b','b'];
+```
 
 ## 根据index删除数组元素----
 
 ## 根据数组元素找到相应index----_.indexOf、 _.findIndex
+> 不同：_.indexOf用于简单数组；_.findIndex: 用于复杂数组
 ```angularjs
     // _.indexOf用于简单数组
     const arr = [33, 22, 555, 3443];
@@ -78,8 +109,11 @@ lodash的使用
     console.log(split); //  ["2017", "08", "24"]
     console.log(split1); //  ["b", "a", "w", "o", "f", "e", "n", "k", "a", "i"]
 ```
-## 检查是否为对象----_.isPlainObject
+## 检查是否为对象----_.isPlainObjec、  _.isObject
+> 前者判断的是单纯的对象
+> 后者是广义上的对象，比如数组，正则，函数之类的，也会返回true
 ```angularjs
+    // _.isPlainObjec
     var obj4 = {
         name: '明明',
         home: '北京',
@@ -89,10 +123,34 @@ lodash的使用
     console.log(_.isPlainObject(obj4)); // true
     console.log(_.isPlainObject(arr)); // false
 ```
+```angularjs
+    //  _.isObject
+    console.log(_.isObject([])); // true
+    console.log(_.isObject({})); // true
+    console.log(_.isObject(function () {
 
-## 检查是否为数组----
+    })); // true
+    console.log(_.isObject('')); // false
+```
+
+## 检查是否为数组----_.isArray
+```angularjs
+    console.log(_.isArray([])); // true
+    console.log(_.isArray([111,222])); // true
+    console.log(_.isArray({})); // false
+```
 
 ## 检查是否为字符串----
+
+## 检查是否为数字类型----_.isNumber
+> 所以NaN也会返回true
+
+```angularjs
+    console.log(_.isNumber(parseInt('2311'))); // true
+    console.log(_.isNumber(parseInt('wwww'))); // true
+    console.log(_.isNumber('www')); // false
+    console.log(_.isNumber(3223)); // true
+```
 
 ## 检查是否为NaN----_.isNaN
 ```angularjs
@@ -121,7 +179,11 @@ lodash的使用
     _.set(obj, 'age', 22);
     console.log(obj);// { age : 22, name : "小芳", }
 ```
-## 数组反转----
+## 数组反转----_.reverse
+```angularjs
+    const arr4 = ['G', 'X', 'D'];
+    console.log(_.reverse(arr4)); // ["D", "X", "G"]
+```
 
 ## 将字符串转换为驼峰命名---_.camelCase
 ```angularjs
@@ -159,4 +221,113 @@ lodash的使用
     console.log(_.sortBy(users, [function (o) {
         return o.age;
     }]));
+```
+## 字符串替换/截取----_.replace
+```angularjs
+    const str5 = 'happyNewYear';
+    console.log(_.replace(str5, 'NewYear', 'Birthday')); // happyBirthday
+    const str6 = 'config.json';
+    console.log(_.replace(str6, '.json', '')); // config
+```
+
+## 对象数组中，匹配到一个属性值，返回这个项----_.find、 _.filter
+> 区别：_.find只返回一条，并且返回的是一个对象；_.filter返回所有匹配上的项，返回的是一个数组
+
+```angularjs
+// _.find
+ var user3 = [
+        { 'user': 'barney',  'age': 36, 'active': true },
+        { 'user': 'fred',    'age': 40, 'active': false },
+        { 'user': 'pebbles', 'age': 1,  'active': true }
+    ];
+// ---------------------------------------------------------------------------------------
+    console.log(_.find(user3, {'age': 1})); // {user: "pebbles", age: 1, active: true}
+// ---------------------------------------------------------------------------------------
+    console.log(_.find(user3, function (o) {
+        return o.age < 40;
+    })); // {user: "barney", age: 36, active: true}
+    
+```
+```angularjs
+// _.filter
+    var arr7 = [
+        { 'user': 'jray', 'age': 36, 'active': true },
+        { 'user': 'fred',   'age': 40, 'active': false },
+        { 'user': 'lili', 'age': 44, 'active': true },
+    ];
+
+    console.log(_.filter(arr7, function (o) {
+        return o.active;
+    }));
+    
+    // [
+    //    {user: "jray", age: 36, active: true}, 
+    //   {user: "lili", age: 44, active: true}
+    // ]
+```
+
+
+## 转换为数字-----_.toNumber
+```angularjs
+    console.log(_.toNumber(3.2)); // 数字3.2
+    console.log(_.toNumber('3.2')); // 数字3.2
+```
+
+## 让对象中的某一个属性值作为整个对象的键----_.keyBy
+```angularjs
+    var array = [
+        { 'dir': 'left', 'code': 97 },
+        { 'dir': 'right', 'code': 100 }
+    ];
+
+    console.log(_.keyBy(array, 'dir'));
+    // {
+    //   left: {dir: "left", code: 97},
+    //   right:{dir: "right", code: 100}
+    // }
+```
+
+## 克隆----_.clone、 _.cloneDeep
+> 区别：_.clone克隆的元素的指针，而_.cloneDeep是重新开了一个区域，建立了新的指针。
+>所以_.cloneDeep更严格一些。需要哪种，看例子自取把。
+```angularjs
+//    _.clone
+        var arr5 = [{ 'a': 1 , 'c': {'d': 'like', 'e': 'eat'}}, { 'b': 2 }];
+        var shallow = _.clone(arr5);
+        console.log(shallow); // [{ 'a': 1 , 'c': {'d': 'like', 'e': 'eat'}}, { 'b': 2 }]
+        // -------------------------------------------------------------------------------
+        console.log(arr5[0] === shallow[0]); // true
+```
+
+```angularjs
+//    _.cloneDeep
+    var arr6 = [{ 'a': 1 }, { 'b': 2 }];
+    var deep = _.cloneDeep(arr6);
+    console.log(deep[0] === arr6[0]); // false
+```
+
+## 对象去重----_.defaults
+> 从左往右，如果有重复的保留第一个
+```angularjs
+    console.log(_.defaults({'a': 1}, {'b': 2}, {'a': 3}, {'b': 222}, {'c': 2}));
+    // {a: 1, b: 2, c: 2}
+```
+## 数组去重-----_.uniq
+> 只能是这种单纯数组去重，复杂数组这个方法无能为力（比如对象数组这个方法就不行了）
+```angularjs
+    console.log(_.uniq(['a', 'b', 'a'])); // ["a", "b"]
+```
+
+## 获取对象，数字，字符串长度
+```angularjs
+    console.log(_.size({a: 222, b: 111, c:666, d:809})); // 4
+    console.log(_.size([1, 2, 3])); // 3
+    console.log(_.size('guanxiaotong')); // 12
+```
+
+## 函数被触发后，延时执行---- _.debounce
+> 大概意思是这样，若要详细了解还得看文档
+```angularjs
+// 函数debounced，被触发后250毫秒再开始执行，执行的就是_.debounce的第一个参数（函数）
+ var debounced = _.debounce((res)=> {console.log(res)}, 250, {});
 ```
