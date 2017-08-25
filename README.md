@@ -331,7 +331,7 @@
 // 函数debounced，被触发后250毫秒再开始执行，执行的就是_.debounce的第一个参数（函数）
  var debounced = _.debounce((res)=> {console.log(res)}, 250, {});
 ```
-## 取数组交集
+## 取数组交集----_.intersection
 ```angularjs
 console.log(_.intersection([2, 1, 3], [2, 3, 7], [3, 8])); // [3]
 ```
