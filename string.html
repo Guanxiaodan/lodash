@@ -56,16 +56,19 @@
     console.log(_.replace(str6, '.json', '')); // config
 
     /**
-     *
-     *
+     * 删除字符串结尾的空格或其他指定字符
+     * _.trimEnd
      * */
+    console.log(_.trimEnd('  abc  ')); //   abc
+    console.log(_.trimEnd('---abc---', '---')); // ---abc
 
 
     /**
-     *
-     *
+     * 判断是不是字符串
+     * _.isString
      * */
-
+    console.log(_.isString('2333q')); // true
+    console.log(_.isString(3223)); // false
 
     /**
      *

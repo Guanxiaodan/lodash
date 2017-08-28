@@ -101,10 +101,19 @@
      * 根据数组元素删除数组元素
      * 从头到尾，只要是一样的都删除
      * _.pull
+     * _.pullAllBy
+     * 可能前者是用于删除简单数组元素
+     * 后者是删除复杂数组元素
      * */
+//    _.pull
     var arr3 = ['a', 'b', 'c', 'a', 'b', 'c'];
     _.pull(arr3, 'a', 'c');
     console.log(arr3); // ['b','b'];
+
+//    _.pullAllBy
+    var arr8 = [{ 'x': 1 }, { 'x': 2 }, { 'x': 3 }, { 'x': 1 }];
+    _.pullAllBy(arr8, [{ 'x': 1 }, { 'x': 3 }], 'x');
+    console.log('aa', arr8); // [{x: 2}]
 
     /**
      * 数组反转
@@ -198,16 +207,17 @@
 
 
     /**
-     *
-     *
+     * 比较两个数组，返回第二个数组中没有的元素
+     * _.difference
      * */
-
+    console.log(_.difference([2, 1, 7, 5], [2, 3])); // [1, 7, 5]
 
     /**
-     *
-     *
+     * 数组截取
+     * _.slice
      * */
-
+    const s = _.slice(['a', 'b', 'c', 'd', 'e', 'f'], 2, 4);
+    console.log(s); // ["c", "d"]
 
     /**
      *

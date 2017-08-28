@@ -17,8 +17,33 @@
      * 延时执行
      *
      * */
-    var debounced = _.debounce((res)=> {console.log(res)}, 250, {});
+    var debounced = _.debounce((res)=> {console.log(res)}, 1000, {});
+    debounced('天空蓝');
 
+    /**
+     * 每隔多长时间执行一次
+     * _.throttle
+     * 我也不知道他为什么不多次执行，望知情人士解答
+     * */
+    var everydura = _.throttle((res) => {console.log(res)},200);
+    everydura('美丽的花朵');
+
+    /**
+     *
+     *
+     * */
+
+
+    /**
+     *
+     *
+     * */
+
+
+    /**
+     *
+     *
+     * */
 </script>
 
 </body>

@@ -57,12 +57,22 @@
 
 ```
 
-## 根据数组元素删除数组元素---- _.pull
+## 根据数组元素删除数组元素---- _.pull、 _.pullAllBy
+> 从头到尾，只要是一样的都删除
+区别：可能前者是用于删除简单数组元素， 后者是删除复杂数组元素
 ```angularjs
+// _.pull
     var array = ['a', 'b', 'c', 'a', 'b', 'c'];
     _.pull(array, 'a', 'c');
     console.log(array); // ['b','b'];
 ```
+```angularjs
+// _.pullAllBy
+var arr8 = [{ 'x': 1 }, { 'x': 2 }, { 'x': 3 }, { 'x': 1 }];
+    _.pullAllBy(arr8, [{ 'x': 1 }, { 'x': 3 }], 'x');
+    console.log('aa', arr8); // [{x: 2}]
+```
+
 
 ## 根据index删除数组元素----
 
@@ -140,7 +150,11 @@
     console.log(_.isArray({})); // false
 ```
 
-## 检查是否为字符串----
+## 检查是否为字符串----_.isString
+```angularjs
+    console.log(_.isString('2333q')); // true
+    console.log(_.isString(3223)); // false
+```
 
 ## 检查是否为数字类型----_.isNumber
 > 所以NaN也会返回true
@@ -312,6 +326,7 @@
     console.log(_.defaults({'a': 1}, {'b': 2}, {'a': 3}, {'b': 222}, {'c': 2}));
     // {a: 1, b: 2, c: 2}
 ```
+
 ## 数组去重-----_.uniq
 > 只能是这种单纯数组去重，复杂数组这个方法无能为力（比如对象数组这个方法就不行了）
 ```angularjs
@@ -331,7 +346,67 @@
 // 函数debounced，被触发后250毫秒再开始执行，执行的就是_.debounce的第一个参数（函数）
  var debounced = _.debounce((res)=> {console.log(res)}, 250, {});
 ```
+
 ## 取数组交集----_.intersection
 ```angularjs
 console.log(_.intersection([2, 1, 3], [2, 3, 7], [3, 8])); // [3]
 ```
+
+## 转换为数字----_.parseInt
+```angularjs
+    console.log(_.parseInt('21125aaa')); // 21125
+    console.log(_.parseInt(12.331)); // 12
+```
+## 删除字符串结尾的空格或其他指定字符----_.trimEnd
+
+```angularjs
+    console.log(_.trimEnd('  abc  ')); //   abc
+    console.log(_.trimEnd('---abc---', '---')); // ---abc
+```
+
+## 有的话就返回值，没有的话（undefined）返回给定默认值----_.get
+> 通常用于排错
+
+```angularjs
+var obj5 = { 'a': [{ 'b': { 'c': 3 } }] };
+    console.log(_.get(obj5, 'a[0].b.c')); // 3 
+    console.log(_.get(obj5, 'a.b.c', '目前没有值啊')); // 目前没有值啊
+```
+
+## 返回对象的所有key---- _.keys
+```angularjs
+    const obj6 = {a: 222, b: 111, c:666, d:809};
+    console.log(_.keys(obj6)); // ["a", "b", "c", "d"]
+```
+
+## 比较两个数组，返回第二个数组中没有的元素----_.difference
+```angularjs
+console.log(_.difference([2, 1, 7, 5], [2, 3])); // [1, 7, 5]
+```
+
+## 取出对象中的某些键值对组成新的对象----_.pick
+```angularjs
+var object = { 'a': 1, 'b': '2', 'c': 3 };
+    console.log(_.pick(object, ['a', 'c'])); // {a: 1, c: 3}
+```
+## 数组截取----_.slice
+> 返回起始位置到结束为止-1所在的元素
+```angularjs
+    const s = _.slice(['a', 'b', 'c', 'd', 'e', 'f'], 2, 4);
+    console.log(s); // ["c", "d"]
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
