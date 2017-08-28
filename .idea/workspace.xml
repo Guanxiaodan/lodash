@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a79469ad-374b-49e1-bc3c-36f1f0f25003" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -16,135 +17,42 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.40305585">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="array.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/array.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="336">
-                  <caret line="216" column="14" lean-forward="true" selection-start-line="216" selection-start-column="14" selection-end-line="216" selection-end-column="14" />
-                  <folding>
-                    <element signature="e#223#287#0" expanded="false" />
-                    <element signature="e#1814#2020#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="object.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/object.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="387">
-                  <caret line="111" column="7" lean-forward="true" selection-start-line="111" selection-start-column="7" selection-end-line="111" selection-end-column="7" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="string.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/string.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="69" column="45" lean-forward="true" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="number.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/number.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="235">
-                  <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="func.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/func.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="422">
-                  <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/README.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="109">
-                    <caret line="197" column="20" lean-forward="false" selection-start-line="197" selection-start-column="20" selection-end-line="197" selection-end-column="20" />
-                    <folding>
-                      <marker date="1503899696000" expanded="true" signature="343:360" ph="{...}" />
-                      <marker date="1503899696000" expanded="true" signature="487:566" ph="{&quot;name&quot;: '明明'...}" />
-                      <marker date="1503899696000" expanded="true" signature="600:619" ph="{...}" />
-                      <marker date="1503899696000" expanded="true" signature="747:875" ph="[...]" />
-                      <marker date="1503899696000" expanded="true" signature="1166:1198" ph="{...}" />
-                      <marker date="1503899696000" expanded="true" signature="1349:1377" ph="{...}" />
-                      <marker date="1503899696000" expanded="true" signature="2158:2307" ph="[...]" />
-                      <marker date="1503899696000" expanded="true" signature="2610:2681" ph="{&quot;name&quot;: '明明'...}" />
-                      <marker date="1503899696000" expanded="true" signature="3239:3310" ph="{&quot;name&quot;: '明明'...}" />
-                      <marker date="1503899696000" expanded="true" signature="3587:3595" ph="{...}" />
-                      <marker date="1503899696000" expanded="true" signature="5467:5673" ph="[...]" />
-                      <marker date="1503899696000" expanded="true" signature="6320:6356" ph="[...]" />
-                      <marker date="1503899696000" expanded="true" signature="6334:6356" ph="{&quot;return&quot;: o.age...}" />
-                      <marker date="1503899696000" expanded="true" signature="6747:6928" ph="[...]" />
-                      <marker date="1503899696000" expanded="true" signature="7242:7269" ph="{...}" />
-                      <marker date="1503899696000" expanded="true" signature="7372:7547" ph="[...]" />
-                      <marker date="1503899696000" expanded="true" signature="7594:7619" ph="{&quot;return&quot;: o.active...}" />
-                      <marker date="1503899696000" expanded="true" signature="7949:8035" ph="[...]" />
-                    </folding>
-                  </first_editor>
-                  <second_editor />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/README.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="498">
-                    <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-                    <folding>
-                      <marker date="1503899696000" expanded="true" signature="343:360" ph="{...}" />
-                      <marker date="1503899696000" expanded="true" signature="487:566" ph="{&quot;name&quot;: '明明'...}" />
-                      <marker date="1503899696000" expanded="true" signature="600:619" ph="{...}" />
-                      <marker date="1503899696000" expanded="true" signature="747:875" ph="[...]" />
-                      <marker date="1503899696000" expanded="true" signature="1166:1198" ph="{...}" />
-                      <marker date="1503899696000" expanded="true" signature="1349:1377" ph="{...}" />
-                      <marker date="1503899696000" expanded="true" signature="2158:2307" ph="[...]" />
-                      <marker date="1503899696000" expanded="true" signature="2610:2681" ph="{&quot;name&quot;: '明明'...}" />
-                      <marker date="1503899696000" expanded="true" signature="3239:3310" ph="{&quot;name&quot;: '明明'...}" />
-                      <marker date="1503899696000" expanded="true" signature="3587:3595" ph="{...}" />
-                      <marker date="1503899696000" expanded="true" signature="5467:5673" ph="[...]" />
-                      <marker date="1503899696000" expanded="true" signature="6320:6356" ph="[...]" />
-                      <marker date="1503899696000" expanded="true" signature="6334:6356" ph="{&quot;return&quot;: o.age...}" />
-                      <marker date="1503899696000" expanded="true" signature="6747:6928" ph="[...]" />
-                      <marker date="1503899696000" expanded="true" signature="7242:7269" ph="{...}" />
-                      <marker date="1503899696000" expanded="true" signature="7372:7547" ph="[...]" />
-                      <marker date="1503899696000" expanded="true" signature="7594:7619" ph="{&quot;return&quot;: o.active...}" />
-                      <marker date="1503899696000" expanded="true" signature="7642:7693" ph="[...]" />
-                      <marker date="1503899696000" expanded="true" signature="7642:7749" ph="[...]" />
-                      <marker date="1503899696000" expanded="true" signature="7949:8035" ph="[...]" />
-                    </folding>
-                  </first_editor>
-                  <second_editor />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-3420">
+                <caret line="187" column="116" lean-forward="false" selection-start-line="187" selection-start-column="116" selection-end-line="187" selection-end-column="116" />
+                <folding>
+                  <marker date="1503901726000" expanded="true" signature="217:288" ph="{&quot;name&quot;: '明明'...}" />
+                  <marker date="1503901726000" expanded="true" signature="565:573" ph="{...}" />
+                  <marker date="1503901726000" expanded="true" signature="2110:2127" ph="{...}" />
+                  <marker date="1503901726000" expanded="true" signature="2254:2333" ph="{&quot;name&quot;: '明明'...}" />
+                  <marker date="1503901726000" expanded="true" signature="2367:2386" ph="{...}" />
+                  <marker date="1503901726000" expanded="true" signature="2514:2642" ph="[...]" />
+                  <marker date="1503901726000" expanded="true" signature="2933:2965" ph="{...}" />
+                  <marker date="1503901726000" expanded="true" signature="3116:3144" ph="{...}" />
+                  <marker date="1503901726000" expanded="true" signature="4310:4459" ph="[...]" />
+                  <marker date="1503901726000" expanded="true" signature="4879:4950" ph="{&quot;name&quot;: '明明'...}" />
+                  <marker date="1503901726000" expanded="true" signature="7270:7476" ph="[...]" />
+                  <marker date="1503901726000" expanded="true" signature="8123:8159" ph="[...]" />
+                  <marker date="1503901726000" expanded="true" signature="8137:8159" ph="{&quot;return&quot;: o.age...}" />
+                  <marker date="1503901726000" expanded="true" signature="8550:8731" ph="[...]" />
+                  <marker date="1503901726000" expanded="true" signature="9045:9072" ph="{...}" />
+                  <marker date="1503901726000" expanded="true" signature="9175:9350" ph="[...]" />
+                  <marker date="1503901726000" expanded="true" signature="9397:9422" ph="{&quot;return&quot;: o.active...}" />
+                  <marker date="1503901726000" expanded="true" signature="9445:9496" ph="[...]" />
+                  <marker date="1503901726000" expanded="true" signature="9445:9552" ph="[...]" />
+                  <marker date="1503901726000" expanded="true" signature="9622:9708" ph="[...]" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -345,12 +253,12 @@
       <updated>1501837294586</updated>
       <workItem from="1501837295869" duration="610000" />
       <workItem from="1503558694336" duration="11764000" />
-      <workItem from="1503625102415" duration="21081000" />
+      <workItem from="1503625102415" duration="21585000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33455000" />
+    <option name="totallyTimeSpent" value="33959000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="974" extended-state="0" />
@@ -426,26 +334,26 @@
           <first_editor relative-caret-position="2850">
             <caret line="150" column="25" lean-forward="true" selection-start-line="150" selection-start-column="25" selection-end-line="150" selection-end-column="25" />
             <folding>
-              <marker date="1503899696000" expanded="true" signature="343:360" ph="{...}" />
-              <marker date="1503899696000" expanded="true" signature="487:566" ph="{&quot;name&quot;: '明明'...}" />
-              <marker date="1503899696000" expanded="true" signature="600:619" ph="{...}" />
-              <marker date="1503899696000" expanded="true" signature="747:875" ph="[...]" />
-              <marker date="1503899696000" expanded="true" signature="1166:1198" ph="{...}" />
-              <marker date="1503899696000" expanded="true" signature="1349:1377" ph="{...}" />
-              <marker date="1503899696000" expanded="true" signature="2158:2307" ph="[...]" />
-              <marker date="1503899696000" expanded="true" signature="2610:2681" ph="{&quot;name&quot;: '明明'...}" />
-              <marker date="1503899696000" expanded="true" signature="3239:3310" ph="{&quot;name&quot;: '明明'...}" />
-              <marker date="1503899696000" expanded="true" signature="3587:3595" ph="{...}" />
-              <marker date="1503899696000" expanded="true" signature="5467:5673" ph="[...]" />
-              <marker date="1503899696000" expanded="true" signature="6320:6356" ph="[...]" />
-              <marker date="1503899696000" expanded="true" signature="6334:6356" ph="{&quot;return&quot;: o.age...}" />
-              <marker date="1503899696000" expanded="true" signature="6747:6928" ph="[...]" />
-              <marker date="1503899696000" expanded="true" signature="7242:7269" ph="{...}" />
-              <marker date="1503899696000" expanded="true" signature="7372:7547" ph="[...]" />
-              <marker date="1503899696000" expanded="true" signature="7594:7619" ph="{&quot;return&quot;: o.active...}" />
-              <marker date="1503899696000" expanded="true" signature="7642:7693" ph="[...]" />
-              <marker date="1503899696000" expanded="true" signature="7642:7749" ph="[...]" />
-              <marker date="1503899696000" expanded="true" signature="7949:8035" ph="[...]" />
+              <marker date="1503901726000" expanded="true" signature="217:288" ph="{&quot;name&quot;: '明明'...}" />
+              <marker date="1503901726000" expanded="true" signature="565:573" ph="{...}" />
+              <marker date="1503901726000" expanded="true" signature="2110:2127" ph="{...}" />
+              <marker date="1503901726000" expanded="true" signature="2254:2333" ph="{&quot;name&quot;: '明明'...}" />
+              <marker date="1503901726000" expanded="true" signature="2367:2386" ph="{...}" />
+              <marker date="1503901726000" expanded="true" signature="2514:2642" ph="[...]" />
+              <marker date="1503901726000" expanded="true" signature="2933:2965" ph="{...}" />
+              <marker date="1503901726000" expanded="true" signature="3116:3144" ph="{...}" />
+              <marker date="1503901726000" expanded="true" signature="4310:4459" ph="[...]" />
+              <marker date="1503901726000" expanded="true" signature="4879:4950" ph="{&quot;name&quot;: '明明'...}" />
+              <marker date="1503901726000" expanded="true" signature="7270:7476" ph="[...]" />
+              <marker date="1503901726000" expanded="true" signature="8123:8159" ph="[...]" />
+              <marker date="1503901726000" expanded="true" signature="8137:8159" ph="{&quot;return&quot;: o.age...}" />
+              <marker date="1503901726000" expanded="true" signature="8550:8731" ph="[...]" />
+              <marker date="1503901726000" expanded="true" signature="9045:9072" ph="{...}" />
+              <marker date="1503901726000" expanded="true" signature="9175:9350" ph="[...]" />
+              <marker date="1503901726000" expanded="true" signature="9397:9422" ph="{&quot;return&quot;: o.active...}" />
+              <marker date="1503901726000" expanded="true" signature="9445:9496" ph="[...]" />
+              <marker date="1503901726000" expanded="true" signature="9445:9552" ph="[...]" />
+              <marker date="1503901726000" expanded="true" signature="9622:9708" ph="[...]" />
             </folding>
           </first_editor>
           <second_editor />
@@ -464,6 +372,33 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/array.js" />
+    <entry file="file://$PROJECT_DIR$/object.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="111" column="7" lean-forward="true" selection-start-line="111" selection-start-column="7" selection-end-line="111" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/string.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="69" column="45" lean-forward="true" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/array.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="216" column="14" lean-forward="true" selection-start-line="216" selection-start-column="14" selection-end-line="216" selection-end-column="14" />
+          <folding>
+            <element signature="e#223#287#0" expanded="false" />
+            <element signature="e#1814#2020#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/number.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
@@ -480,59 +415,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/object.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="111" column="7" lean-forward="true" selection-start-line="111" selection-start-column="7" selection-end-line="111" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/array.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="216" column="14" lean-forward="true" selection-start-line="216" selection-start-column="14" selection-end-line="216" selection-end-column="14" />
-          <folding>
-            <element signature="e#223#287#0" expanded="false" />
-            <element signature="e#1814#2020#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/string.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="69" column="45" lean-forward="true" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="498">
-            <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <first_editor relative-caret-position="-3420">
+            <caret line="187" column="116" lean-forward="false" selection-start-line="187" selection-start-column="116" selection-end-line="187" selection-end-column="116" />
             <folding>
-              <marker date="1503899696000" expanded="true" signature="343:360" ph="{...}" />
-              <marker date="1503899696000" expanded="true" signature="487:566" ph="{&quot;name&quot;: '明明'...}" />
-              <marker date="1503899696000" expanded="true" signature="600:619" ph="{...}" />
-              <marker date="1503899696000" expanded="true" signature="747:875" ph="[...]" />
-              <marker date="1503899696000" expanded="true" signature="1166:1198" ph="{...}" />
-              <marker date="1503899696000" expanded="true" signature="1349:1377" ph="{...}" />
-              <marker date="1503899696000" expanded="true" signature="2158:2307" ph="[...]" />
-              <marker date="1503899696000" expanded="true" signature="2610:2681" ph="{&quot;name&quot;: '明明'...}" />
-              <marker date="1503899696000" expanded="true" signature="3239:3310" ph="{&quot;name&quot;: '明明'...}" />
-              <marker date="1503899696000" expanded="true" signature="3587:3595" ph="{...}" />
-              <marker date="1503899696000" expanded="true" signature="5467:5673" ph="[...]" />
-              <marker date="1503899696000" expanded="true" signature="6320:6356" ph="[...]" />
-              <marker date="1503899696000" expanded="true" signature="6334:6356" ph="{&quot;return&quot;: o.age...}" />
-              <marker date="1503899696000" expanded="true" signature="6747:6928" ph="[...]" />
-              <marker date="1503899696000" expanded="true" signature="7242:7269" ph="{...}" />
-              <marker date="1503899696000" expanded="true" signature="7372:7547" ph="[...]" />
-              <marker date="1503899696000" expanded="true" signature="7594:7619" ph="{&quot;return&quot;: o.active...}" />
-              <marker date="1503899696000" expanded="true" signature="7642:7693" ph="[...]" />
-              <marker date="1503899696000" expanded="true" signature="7642:7749" ph="[...]" />
-              <marker date="1503899696000" expanded="true" signature="7949:8035" ph="[...]" />
+              <marker date="1503901726000" expanded="true" signature="217:288" ph="{&quot;name&quot;: '明明'...}" />
+              <marker date="1503901726000" expanded="true" signature="565:573" ph="{...}" />
+              <marker date="1503901726000" expanded="true" signature="2110:2127" ph="{...}" />
+              <marker date="1503901726000" expanded="true" signature="2254:2333" ph="{&quot;name&quot;: '明明'...}" />
+              <marker date="1503901726000" expanded="true" signature="2367:2386" ph="{...}" />
+              <marker date="1503901726000" expanded="true" signature="2514:2642" ph="[...]" />
+              <marker date="1503901726000" expanded="true" signature="2933:2965" ph="{...}" />
+              <marker date="1503901726000" expanded="true" signature="3116:3144" ph="{...}" />
+              <marker date="1503901726000" expanded="true" signature="4310:4459" ph="[...]" />
+              <marker date="1503901726000" expanded="true" signature="4879:4950" ph="{&quot;name&quot;: '明明'...}" />
+              <marker date="1503901726000" expanded="true" signature="7270:7476" ph="[...]" />
+              <marker date="1503901726000" expanded="true" signature="8123:8159" ph="[...]" />
+              <marker date="1503901726000" expanded="true" signature="8137:8159" ph="{&quot;return&quot;: o.age...}" />
+              <marker date="1503901726000" expanded="true" signature="8550:8731" ph="[...]" />
+              <marker date="1503901726000" expanded="true" signature="9045:9072" ph="{...}" />
+              <marker date="1503901726000" expanded="true" signature="9175:9350" ph="[...]" />
+              <marker date="1503901726000" expanded="true" signature="9397:9422" ph="{&quot;return&quot;: o.active...}" />
+              <marker date="1503901726000" expanded="true" signature="9445:9496" ph="[...]" />
+              <marker date="1503901726000" expanded="true" signature="9445:9552" ph="[...]" />
+              <marker date="1503901726000" expanded="true" signature="9622:9708" ph="[...]" />
             </folding>
           </first_editor>
           <second_editor />
