@@ -75,6 +75,8 @@ var arr8 = [{ 'x': 1 }, { 'x': 2 }, { 'x': 3 }, { 'x': 1 }];
 
 
 ## 根据index删除数组元素----
+> 没找到，还真是直接用原生的splice方法吧
+
 
 ## 根据数组元素找到相应index----_.indexOf、 _.findIndex
 > 不同：_.indexOf用于简单数组；_.findIndex: 用于复杂数组
@@ -108,7 +110,6 @@ var arr8 = [{ 'x': 1 }, { 'x': 2 }, { 'x': 3 }, { 'x': 1 }];
     console.log(_.omit(obj3, 'name')); // {home: "北京", school: "清华大学"}
 ```
 
-## 在对象数组中，根据属性值返回相应对象/对象的索引----
 
 ## 把字符串分割为数组----_.split
 ```angularjs
