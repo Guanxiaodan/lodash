@@ -312,19 +312,20 @@ var obj5 = { 'a': [{ 'b': { 'c': 3 } }] };
 ```
 
 
-## 转换为数字----_.parseInt
+## 转换为数字----_.parseInt、 _.toNumber
+> 不同：_.parseInt转换为整型
+_.toNumber 可以带小数点，但如果遇到非数字字符就会返回NaN
 ```angularjs
     console.log(_.parseInt('21125aaa')); // 21125
     console.log(_.parseInt(12.331)); // 12
 ```
 
-
-
-## 转换为数字-----_.toNumber
 ```angularjs
     console.log(_.toNumber(3.2)); // 数字3.2
     console.log(_.toNumber('3.2')); // 数字3.2
 ```
+
+
 
 
 ## 将字符串转换为驼峰命名---_.camelCase
