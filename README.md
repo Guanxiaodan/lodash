@@ -437,11 +437,16 @@ _.toNumber 可以带小数点，但如果遇到非数字字符就会返回NaN
  var debounced = _.debounce((res)=> {console.log(res)}, 250, {});
 ```
 
+## ==========================华丽分割线=============================================================
 
+# 以下方法非lodash,而是原生方法：
 
-
-
-
+## 截取字符串前几位----- substring
+```angularjs
+    const str7 = '2345Y8492';
+    console.log(str7.substring(0, 3)); //234
+    console.log(str7.substring(5, 8)); //849
+```
 
 
 
