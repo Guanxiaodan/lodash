@@ -448,9 +448,15 @@ _.toNumber 可以带小数点，但如果遇到非数字字符就会返回NaN
     console.log(str7.substring(5, 8)); //849
 ```
 
+## ==========================华丽分割线=============================================================
 
-
-
+# Vue上的根据数组元素来删除数组元素（对于复杂数组）
+> 逻辑是根据数组元素先找到对应的index，在使用Vue的splice删除掉对应元素
+> 为什么要这样做，因为如果直接用lodash的_.pullAllBy删除数组元素时，Vue监测不到数组变化
+```angular2html
+const index = _.findIndex([{id:33,name:'nana'},{id:74,name:'mingming'}], { id: 33 });
+this.userDeptArr.splice(index, 1);
+```
 
 
 
