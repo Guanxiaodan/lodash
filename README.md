@@ -417,10 +417,31 @@ _.toNumber 可以带小数点，但如果遇到非数字字符就会返回NaN
     // {a: 1, b: 2, c: 2}
 ```
 
-## 数组去重-----_.uniq
-> 只能是这种单纯数组去重，复杂数组这个方法无能为力（比如对象数组这个方法就不行了）
+## 数组去重-----_.uniq, _.uniqBy
+> _.uniq只能是这种单纯数组去重，复杂数组这个方法无能为力（比如对象数组这个方法就不行了）
+> _.uniqBy用于复杂数组去重
 ```angularjs
+// _.uniq
     console.log(_.uniq(['a', 'b', 'a'])); // ["a", "b"]
+```
+```angularjs
+// _.uniqBy
+        var arr8 = [{name: '小明', id: '1122', age: '22'}, {name: '小明', id: '1122', age: '22'}, {name: '小明', id: '1122', age: '22'},{name: '小红', id: '1322', age: '21'}]
+        console.log('复杂数组去重,去掉ID相同的数组元素', _.uniqBy(arr8, 'id')); // [{name: '小明', id: '1122', age: '22'}, {name: '小红', id: '1322', age: '21'}]
+    
+        var arr9 = [{name: '二哈', id: '01', age: '1'}, {name: '二哈', id: '01', age: '2'}, {name: '柯基', id: '01', age: '3'},{name: '二哈', id: '02', age: '4'}];
+        console.log('复杂数组去重,去掉ID或name都相同的数组元素', _.uniqBy(arr9, ['id', 'name'])); // [{name: '二哈', id: '01', age: '1'}]
+        
+        // 这个函数是只有ID和name都相同了，才会被去掉，目前arr2只接受两个元素
+        var and = function (arr, arr2) {
+          _.forEach(arr, (v) => {
+            v.join = v[arr2[0]].toString() + v[arr2[1]].toString();
+          });
+          return _.uniqBy(arr, 'join')
+        };
+        var arr11 = and(arr9, ['id', 'name']);
+        console.log('复杂数组去重,去掉ID或name都相同的数组元素', arr11); // [{name: '二哈', id: '01', age: '1'}, {name: '柯基', id: '01', age: '3'},{name: '二哈', id: '02', age: '4'}];
+
 ```
 
 ## 获取对象，数字，字符串长度----_.size
