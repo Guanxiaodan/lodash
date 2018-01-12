@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a79469ad-374b-49e1-bc3c-36f1f0f25003" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/string.html" afterPath="$PROJECT_DIR$/string.html" />
-    </list>
+    <list default="true" id="a79469ad-374b-49e1-bc3c-36f1f0f25003" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -22,8 +19,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="633">
-                <caret line="481" column="0" lean-forward="true" selection-start-line="481" selection-start-column="0" selection-end-line="481" selection-end-column="0" />
+              <first_editor relative-caret-position="614">
+                <caret line="480" column="0" lean-forward="true" selection-start-line="480" selection-start-column="0" selection-end-line="480" selection-end-column="0" />
                 <folding>
                   <marker date="1509627724000" expanded="true" signature="782:853" ph="{&quot;name&quot;: '明明'...}" />
                   <marker date="1509627724000" expanded="true" signature="1131:1139" ph="{...}" />
@@ -260,12 +257,12 @@
       <workItem from="1504088409406" duration="893000" />
       <workItem from="1507713215656" duration="508000" />
       <workItem from="1509621963320" duration="3867000" />
-      <workItem from="1514190290537" duration="254000" />
+      <workItem from="1514190290537" duration="343000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41178000" />
+    <option name="totallyTimeSpent" value="41267000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="974" extended-state="6" />
@@ -484,8 +481,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="633">
-            <caret line="481" column="0" lean-forward="true" selection-start-line="481" selection-start-column="0" selection-end-line="481" selection-end-column="0" />
+          <first_editor relative-caret-position="614">
+            <caret line="480" column="0" lean-forward="true" selection-start-line="480" selection-start-column="0" selection-end-line="480" selection-end-column="0" />
             <folding>
               <marker date="1509627724000" expanded="true" signature="782:853" ph="{&quot;name&quot;: '明明'...}" />
               <marker date="1509627724000" expanded="true" signature="1131:1139" ph="{...}" />
