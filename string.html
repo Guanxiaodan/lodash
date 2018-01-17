@@ -87,9 +87,16 @@
     console.log(str7.substring(5, 8)); //849
 
     /**
-     *
+     * 将字符串分割为数字和非数字字符
      *
      * */
+    function segment(item){
+      const num = parseFloat(item);
+      const unit = item.replace(num, '');
+      return [num, unit]
+    }
+    var ss = segment('7574.2646rem');
+    console.log(ss); // [7574.2646, "rem"]
 </script>
 </body>
 </html>
