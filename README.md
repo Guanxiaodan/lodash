@@ -317,6 +317,7 @@ var obj5 = { 'a': [{ 'b': { 'c': 3 } }] };
 ## 转换为数字----_.parseInt、 _.toNumber
 > 不同：_.parseInt转换为整型
 _.toNumber 可以带小数点，但如果遇到非数字字符就会返回NaN
+如果带小数，也有非数字字符呢？这时候就得用原生的方法了。
 ```angularjs
     console.log(_.parseInt('21125aaa')); // 21125
     console.log(_.parseInt(12.331)); // 12
@@ -327,7 +328,10 @@ _.toNumber 可以带小数点，但如果遇到非数字字符就会返回NaN
     console.log(_.toNumber('3.2')); // 数字3.2
 ```
 
-
+```angularjs
+// 原生方法
+    parseFloat('22.3567vm'); // 22.3567
+```
 
 
 ## 将字符串转换为驼峰命名---_.camelCase
