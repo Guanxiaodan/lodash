@@ -317,7 +317,7 @@ var obj5 = { 'a': [{ 'b': { 'c': 3 } }] };
 ## 转换为数字----_.parseInt、 _.toNumber
 > 不同：_.parseInt转换为整型
 _.toNumber 可以带小数点，但如果遇到非数字字符就会返回NaN
-如果带小数，也有非数字字符呢？这时候就得用原生的方法了。
+如果带小数，也有非数字字符呢？这时候就得用<a href="#第一段的锚点名称">原生</a>的方法了。
 ```angularjs
     console.log(_.parseInt('21125aaa')); // 21125
     console.log(_.parseInt(12.331)); // 12
@@ -326,11 +326,6 @@ _.toNumber 可以带小数点，但如果遇到非数字字符就会返回NaN
 ```angularjs
     console.log(_.toNumber(3.2)); // 数字3.2
     console.log(_.toNumber('3.2')); // 数字3.2
-```
-
-```angularjs
-// 原生方法
-    parseFloat('22.3567vm'); // 22.3567
 ```
 
 
@@ -468,11 +463,16 @@ _.toNumber 可以带小数点，但如果遇到非数字字符就会返回NaN
 
 # 以下方法非lodash,而是原生方法：
 
-## 截取字符串前几位----- substring
+## 截取字符串前几位 ----- substring
 ```angularjs
     const str7 = '2345Y8492';
     console.log(str7.substring(0, 3)); //234
     console.log(str7.substring(5, 8)); //849
+```
+## <a name="转换为数字">转换为数字</a> ----- parseFloat
+```angularjs
+// 原生方法
+    parseFloat('22.3567vm'); // 22.3567
 ```
 
 ## ==========================华丽分割线=============================================================
