@@ -1,6 +1,8 @@
 # lodash
 项目中用到的lodash,都是最基本的用法，详细的还得看文档
 
+[源码学习](./源码学习)
+
 ## [数组demo](./array.html)、[对象demo](./object.html)、[字符串demo](./string.html)、[数字demo](./number.html)、[函数demo](./func.html)
 
 废话不多，直接开始吧--------------------
